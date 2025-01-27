@@ -3,7 +3,8 @@
 path = "backend"
 start = "node server.js"
 
-# Frontend service
+# Frontend service (if it's a React app)
 [services.frontend]
 path = "frontend"
-build = "npm run build"
+build = "npm install && npm run build"
+start = "serve -s build"
