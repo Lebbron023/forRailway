@@ -1,0 +1,9 @@
+# Backend service
+[services.backend]
+path = "backend"
+start = "node server.js"
+
+# Frontend service
+[services.frontend]
+path = "frontend"
+build = "npm run build"
